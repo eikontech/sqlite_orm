@@ -9,7 +9,7 @@ set(PACKAGE_VERSION ${sqlite_orm_VERSION})
 project("sqlite_orm" VERSION ${PACKAGE_VERSION})
 
 # Handling C++ standard version to use
-option(SQLITE_ORM_ENABLE_CXX_17 "Enable C++ 17" OFF)
+option(SQLITE_ORM_ENABLE_CXX_17 "Enable C++ 17" ON)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 if(SQLITE_ORM_ENABLE_CXX_17)
 	set(CMAKE_CXX_STANDARD 17)
